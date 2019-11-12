@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <PackageType>Template</PackageType>
+    <PackageVersion>1.0</PackageVersion>
+    <PackageId>Devdeer.Utility.Templates</PackageId>
+    <Title>Devdeer Azure Templates</Title>
+    <Authors>Eugen Meissner</Authors>
+    <Description>Templates to use when creating an application for Devdeer Application.</Description>
+    <PackageTags>dotnet-new;templates;contoso</PackageTags>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+
+    <IncludeContentInPack>true</IncludeContentInPack>
+    <IncludeBuildOutput>false</IncludeBuildOutput>
+    <ContentTargetFolders>content</ContentTargetFolders>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="**\*" Exclude="**\bin\**;templates\**\obj\**" />
+    <Compile Remove="**\*" />
+  </ItemGroup>
+</Project>
