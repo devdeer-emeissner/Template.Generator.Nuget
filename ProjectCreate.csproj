@@ -15,7 +15,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Content Include="**\*" Exclude="**\bin\**;templates\**\obj\**" />
+    <Content Include="template_generator\**\*" />
     <Compile Remove="**\*" />
   </ItemGroup>
 </Project>
